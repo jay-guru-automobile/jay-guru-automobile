@@ -1,128 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Hind', sans-serif;
-  background: #f8f9fa;
-  color: #222;
-  line-height: 1.6;
-}
-
-header {
-  background: linear-gradient(135deg, #e65100, #ff8c00);
-  color: white;
+/* Gallery Section */
+.gallery {
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 2.5rem 1rem;
 }
 
-header h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0.4rem;
-  font-weight: 700;
-  text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
-}
-
-.tagline {
-  font-size: 1.3rem;
-  opacity: 0.95;
-}
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-
-.services h2,
-.contact h2 {
-  color: #d84315;
-  text-align: center;
-  margin: 2rem 0 1.2rem;
-  font-size: 2rem;
-  border-bottom: 3px solid #ff9800;
-  display: inline-block;
-  padding-bottom: 0.4rem;
-}
-
-.service-list {
+.photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
 }
 
-.card {
+.photo-card {
   background: white;
   border-radius: 12px;
-  padding: 1.8rem 1.2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-  border-top: 5px solid #ff9800;
-  transition: transform 0.15s;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 
-.card:hover {
-  transform: translateY(-6px);
+.photo-card:hover {
+  transform: scale(1.04);
 }
 
-.icon {
-  font-size: 3.2rem;
-  margin-bottom: 1rem;
+.photo-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Keeps photos looking good without stretching */
 }
 
-.card h3 {
-  color: #e65100;
-  margin-bottom: 0.8rem;
-  font-size: 1.4rem;
-}
-
-.card p {
-  margin: 0.5rem 0;
-  color: #444;
-}
-
-.contact {
-  background: #fff8e1;
-  padding: 2rem;
-  border-radius: 12px;
-  margin: 2.5rem 0;
-  text-align: center;
-}
-
-.contact-info p {
-  font-size: 1.15rem;
-  margin: 0.9rem 0;
-}
-
-.contact a {
-  color: #d84315;
-  text-decoration: none;
+.photo-card p {
+  padding: 0.8rem;
+  margin: 0;
   font-weight: 600;
+  color: #d84315;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+/* Social Links */
+.social-link {
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.extra {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #555;
-  margin: 2rem 0;
+.whatsapp {
+  color: #25D366; /* WhatsApp green */
 }
 
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 3rem;
-}
-
-@media (max-width: 500px) {
-  header h1 { font-size: 2.1rem; }
-  .tagline { font-size: 1.1rem; }
-  main { padding: 1rem; }
+.facebook {
+  color: #1877F2; /* Facebook blue */
 }
